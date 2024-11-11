@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>色神加戈のBLOG</title>
+  
+  
+  <link href="http://seshenjiage.eu.org/atom.xml" rel="self"/>
+  
+  <link href="http://seshenjiage.eu.org/"/>
+  <updated>2024-11-11T07:12:31.958Z</updated>
+  <id>http://seshenjiage.eu.org/</id>
+  
+  <author>
+    <name>江珂</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一步-注册github</title>
+    <link href="http://seshenjiage.eu.org/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/"/>
+    <id>http://seshenjiage.eu.org/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/</id>
+    <published>2023-05-23T01:22:24.502Z</published>
+    <updated>2024-11-11T07:12:31.958Z</updated>
+    
+    <content type="html"><![CDATA[<p>注册GitHub详细步骤：</p><span id="more"></span><p>打开官网:GitHub官网</p><h3 id="1-如下图点击-sign-up-注册"><a href="#1-如下图点击-sign-up-注册" class="headerlink" title="1.如下图点击 sign up 注册"></a>1.如下图点击 sign up 注册</h3><p><img src="/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/1.png"><br>注意：我点击sign up 之后，弹出如下页面，箭头所指提示 GitHub 不支持这个浏览器（我用的是搜狗），我看了一下，支持 Chrome，Firefox，就用了 Firefox<br><img src="/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/2.png"></p><h3 id="2-用-Firefox-打开-GitHub-官网，进入注册页面："><a href="#2-用-Firefox-打开-GitHub-官网，进入注册页面：" class="headerlink" title="2.用 Firefox 打开 GitHub 官网，进入注册页面："></a>2.用 Firefox 打开 GitHub 官网，进入注册页面：</h3><p><img src="/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/3.png"><br>填完上图中的昵称、邮箱地址（QQ&#x2F;163邮箱都行）、密码（确保至少有15个字符或至少包括数字和小写字母的8个字符），再验证一下，点击 Next: select a plan, 进入如下页面：<br><img src="/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/4.png"></p><h3 id="3-如上图所示，在选择账户类型这里有一点需要我们注意，那就是：GitHub-的仓库分为两种，一种是public-repositories公开免费版，一种是private-repositories私有付费版。其中，免费版是完全公开的，而私有版一般是由企业或者不愿公开仓库的个人用户购买，在这里，我们选择免费版就可以，然后点击-Choose-Free，进入如下界面："><a href="#3-如上图所示，在选择账户类型这里有一点需要我们注意，那就是：GitHub-的仓库分为两种，一种是public-repositories公开免费版，一种是private-repositories私有付费版。其中，免费版是完全公开的，而私有版一般是由企业或者不愿公开仓库的个人用户购买，在这里，我们选择免费版就可以，然后点击-Choose-Free，进入如下界面：" class="headerlink" title="3.如上图所示，在选择账户类型这里有一点需要我们注意，那就是：GitHub 的仓库分为两种，一种是public repositories公开免费版，一种是private repositories私有付费版。其中，免费版是完全公开的，而私有版一般是由企业或者不愿公开仓库的个人用户购买，在这里，我们选择免费版就可以，然后点击 Choose Free，进入如下界面："></a>3.如上图所示，在选择账户类型这里有一点需要我们注意，那就是：GitHub 的仓库分为两种，一种是public repositories公开免费版，一种是private repositories私有付费版。其中，免费版是完全公开的，而私有版一般是由企业或者不愿公开仓库的个人用户购买，在这里，我们选择免费版就可以，然后点击 Choose Free，进入如下界面：</h3><p><img src="/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/5.png"></p><h3 id="4-如上图所示，有一个问卷调查，填不填都无所谓，如果填完就点击-Complete-setup-如果不想填就点击-Skip-this-step-跳过，不管选择哪个都会进入如下页面："><a href="#4-如上图所示，有一个问卷调查，填不填都无所谓，如果填完就点击-Complete-setup-如果不想填就点击-Skip-this-step-跳过，不管选择哪个都会进入如下页面：" class="headerlink" title="4.如上图所示，有一个问卷调查，填不填都无所谓，如果填完就点击 Complete setup, 如果不想填就点击 Skip this step 跳过，不管选择哪个都会进入如下页面："></a>4.如上图所示，有一个问卷调查，填不填都无所谓，如果填完就点击 Complete setup, 如果不想填就点击 Skip this step 跳过，不管选择哪个都会进入如下页面：</h3><p><img src="/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/6.png"></p><h3 id="5-接下来就是验证邮箱地址了，GitHub会发送邮件到你刚才填的邮箱地址，例如我填的是QQ邮箱，登录QQ邮箱，打开收到的邮件，如下图："><a href="#5-接下来就是验证邮箱地址了，GitHub会发送邮件到你刚才填的邮箱地址，例如我填的是QQ邮箱，登录QQ邮箱，打开收到的邮件，如下图：" class="headerlink" title="5.接下来就是验证邮箱地址了，GitHub会发送邮件到你刚才填的邮箱地址，例如我填的是QQ邮箱，登录QQ邮箱，打开收到的邮件，如下图："></a>5.接下来就是验证邮箱地址了，GitHub会发送邮件到你刚才填的邮箱地址，例如我填的是QQ邮箱，登录QQ邮箱，打开收到的邮件，如下图：</h3><p><img src="/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/7.png"><br>点击 Verify email address, 进入登陆页面, 在username　or email address填写用户名或者邮箱, 在password填写密码, 填好信息点击 sign in 登录, 会要求填写验证码, 此时验证码已发送到你的邮箱<br><img src="/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/8.png"><br>输入验证码，进入如下页面：<br><img src="/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/9.png"><br>点击创建仓库，现在你就有一个名为hello的项目了,<br>到这里已经基本上完成了注册!</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;注册GitHub详细步骤：&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>从零开始搭建个人博客</title>
+    <link href="http://seshenjiage.eu.org/2023/05/23/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://seshenjiage.eu.org/2023/05/23/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2023-05-23T01:04:35.871Z</published>
+    <updated>2024-11-11T07:09:16.379Z</updated>
+    
+    <content type="html"><![CDATA[<p>搭建一个个人博客需要什么呢？</p><span id="more"></span><p>唯一需要的就是耐心、坚持，你需要在遇到问题时自己去网上查找答案，有时候一个问题就要查半天，最后还有可能没解决，但是当问题解决时的满足感令人愉悦。</p><p>我是利用GitHub+Hexo搭建博客，我买了个.com的域名，一年55元（价格会有波动，有时还会有优惠码），你也可以选一个便宜的只要8元一年，甚至你可以不用买域名（对搭建网站没有影响），但是我觉得我登录网站时输入<a href="http://xxx.com很有格调./">http://xxx.com很有格调。</a></p><p>下面你只要一步一步跟着走就能搭建属于你的博客网站啦！</p><h2 id="第一步-注册github"><a href="#第一步-注册github" class="headerlink" title="第一步-注册github"></a><a href="https://seshenjiage.eu.org/2023/05/23/%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%B3%A8%E5%86%8Cgithub/">第一步-注册github</a></h2><h2 id="第二步-Git2-25-0详细安装步骤"><a href="#第二步-Git2-25-0详细安装步骤" class="headerlink" title="第二步-Git2.25.0详细安装步骤"></a><a href="https://seshenjiage.eu.org/2023/05/23/%E7%AC%AC%E4%BA%8C%E6%AD%A5-Git2.25.0%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4/">第二步-Git2.25.0详细安装步骤</a></h2><h2 id="第三步-绑定GitHub并提交文件"><a href="#第三步-绑定GitHub并提交文件" class="headerlink" title="第三步-绑定GitHub并提交文件"></a><a href="https://seshenjiage.eu.org/2023/05/23/%E7%AC%AC%E4%B8%89%E6%AD%A5-%E7%BB%91%E5%AE%9AGitHub%E5%B9%B6%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/">第三步-绑定GitHub并提交文件</a></h2><h2 id="第四步-购买域名"><a href="#第四步-购买域名" class="headerlink" title="第四步-购买域名"></a><a href="https://seshenjiage.eu.org/2023/05/23/%E7%AC%AC%E5%9B%9B%E6%AD%A5-%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/">第四步-购买域名</a></h2><h2 id="第五步-安装node-js和Hexo"><a href="#第五步-安装node-js和Hexo" class="headerlink" title="第五步-安装node.js和Hexo"></a><a href="https://seshenjiage.eu.org/2023/05/23/%E7%AC%AC%E4%BA%94%E6%AD%A5-%E5%AE%89%E8%A3%85node.js%E5%92%8CHexo/">第五步-安装node.js和Hexo</a></h2><h2 id="第六步-解析域名"><a href="#第六步-解析域名" class="headerlink" title="第六步-解析域名"></a><a href="https://seshenjiage.eu.org/2023/05/23/%E7%AC%AC%E5%85%AD%E6%AD%A5-%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/">第六步-解析域名</a></h2><h2 id="第七步-设置next主题"><a href="#第七步-设置next主题" class="headerlink" title="第七步-设置next主题"></a><a href="https://seshenjiage.eu.org/2023/05/23/%E7%AC%AC%E4%B8%83%E6%AD%A5-%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/">第七步-设置next主题</a></h2><h2 id="第八步-优化主题"><a href="#第八步-优化主题" class="headerlink" title="第八步-优化主题"></a><a href="https://seshenjiage.eu.org/2023/05/23/%E7%AC%AC%E5%85%AB%E6%AD%A5-%E4%BC%98%E5%8C%96%E4%B8%BB%E9%A2%98/">第八步-优化主题</a></h2><h1 id="恭喜你，到这里就搭建完成啦！！！"><a href="#恭喜你，到这里就搭建完成啦！！！" class="headerlink" title="恭喜你，到这里就搭建完成啦！！！"></a>恭喜你，到这里就搭建完成啦！！！</h1>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;搭建一个个人博客需要什么呢？&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>📡使用Github做一个完全免费的个人网站</title>
+    <link href="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"/>
+    <id>http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</id>
+    <published>2023-05-22T04:55:15.735Z</published>
+    <updated>2023-05-22T05:21:20.294Z</updated>
+    
+    <content type="html"><![CDATA[<p>操作步骤上手简单，即使非IT人员也很容易实现。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">局限：只能是静态网站的个人网站</span><br><span class="line">面向读者：所有人包括非IT人员</span><br></pre></td></tr></table></figure><span id="more"></span><p>首先如果你无法理解“静态网站”的话，那么相信我，静态网站就可以满足你大部分个人网站的需求。其次这篇文章更多的是面向非IT人员，因为我写这篇文章的原因是我的一个同学的故事：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">我同学小A是律师，他想把自己处理过的一些案件记录在自己的个人博客中，他已经注册了公众号。但是他始</span><br><span class="line">终觉得有个网站或者个人博客会显得专业一些，而且还可以展示自己的个人履历，把这个网站链接放在公众号</span><br><span class="line">里面会显得跟专业一些。“好吧，我明白了~”</span><br></pre></td></tr></table></figure><p>而且学会自己搭建一个静态网站是一个很酷的事情，你可以做一些很漂亮的宣传页，或者表达自我主张的个人博客，或者在我以前的文章里面给别人做一个网页版生日祝福or纪念日等等。</p><p>所以开始吧~</p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>首先我们要用到的工具是著名的开源社区Github，我们做的静态网站最终要托管在上面，这个功能叫做“Github Pages”，是一项免费的静态文件部署服务。</p><p>虽然Github是国外的网站，但是在国内可以访问并且速度还不错！</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">有人担心，如果以后Github被墙了怎么办？</span><br><span class="line">放心，即使被墙了，你学会如下的操作依然可以在类似的国内平台，例如码云等</span><br></pre></td></tr></table></figure><h2 id="1-申请Github账号"><a href="#1-申请Github账号" class="headerlink" title="1.申请Github账号"></a>1.申请Github账号</h2><p>（如果有账号请直接登录然后跳转到教程下一步）</p><p>访问Github，点击SIGN UP按钮。（Sign in是登录的意思，应该都很好理解）还有Github是全英文的，没有中文的哦亲，但这不影响我们使用的。</p><p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/1.png"></p><p>注册很简单，只需要用户名，密码，邮箱即可，不需要手机号。（对了，用户名用一个酷一点或者有意义一点的，因为它会出现在你的网址中）</p><p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/2.png"></p><p>接着，Github会问你是否需要付费使用。这里选择不用，因为Github提供的免费服务已经能满足大部分人包括开发者的需要了。付费服务主要是面向团队以及企业。</p><p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/3.png"></p><p>后面还会有一些步骤，大概意思就是问你想用Github做什么，你对Git的熟练程度，（感觉像是moba游戏新手调研都会这么做）因为Github网站迭代的原因可能会稍有不同。比如笔者这里试的时候是这样子的。</p><p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/4.png"><br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/5.png"><br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/6.png"></p><p>然后Github会给你注册的邮箱发送一个确认链接，请点击链接确认，不激活的话是无法正常使用Github的服务的。这个是Github的反爬虫系统。（题外话：Github的反爬虫系统很强很强！）</p><p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/7.png"></p><h2 id="2-创建一个仓库"><a href="#2-创建一个仓库" class="headerlink" title="2.创建一个仓库"></a>2.创建一个仓库</h2><p>接下来我们要创建一个仓库，仓库就是保存代码的地方，也就是保存网站的地方。这里我们做一个最简单的网站：个人简历。</p><p>1，首先点击“Your repositories”，查看个人全部仓库，第一次肯定是空空如也啊。<br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/8.png"><br>2，接着我们新建一个仓库<br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/9.png"><br>3，这一步很重要，仓库的名字不可以随便写，必须是 &lt;我的名字&gt;.github.io</p><p>比如我注册的名字是 zhihu1，所以这里我创建的仓库的名字必须是 ： <a href="http://zhihu1.github.io/">http://zhihu1.github.io</a><br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/10.png"><br>4，接着下一步页面会比较复杂，你会看到一大堆看不懂的东西，其实那些事git操作提示。如果你熟练git的话就知道了。不过我们不管这些，我们只需要创建一个新的文件就行啦！<br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/11.png"><br>5，新文件的名字不可以乱写哦，必须是 index.html，这里大家都一样都写这个。（题外话：静态http文件托管服务的默认访问文件就是index.html）<br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/12.png"><br>可以参考笔者的内容如下，改成你自己的介绍哦~</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Hello 大家好&lt;/p&gt;</span><br><span class="line">&lt;p&gt;我是霸都丶傲天，这是我的个人网站。 &lt;/p&gt;</span><br><span class="line">&lt;p&gt;很高兴你来到这里, 你可以在以下的网站找到我&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;ul&gt;</span><br><span class="line">  &lt;li&gt; &lt;a href=&quot;https://www.zhihu.com/people/AJLoveChina&quot;&gt;知乎&lt;/a&gt; &lt;/li&gt;</span><br><span class="line">  &lt;li&gt; &lt;a href=&quot;http://hejie.nigeerhuo.com&quot;&gt;我的博客(已经不更细了,现在在知乎写文章)&lt;/a&gt; &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure><h2 id="3-查看网站的网址"><a href="#3-查看网站的网址" class="headerlink" title="3.查看网站的网址"></a>3.查看网站的网址</h2><p>到这里，我们一个最简单的个人网站的代码就完成了。接下来最重要的一步，我们需要知道网站的链接啊，只有这样，别人才能访问我们的网站呀。</p><p>1，点击settings</p><p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/13.png"></p><p>2，然后往下翻找到 Github Pages， 看到绿色提示，后面的链接就是你的网站地址了，打开看看吧~</p><p>Tip：这里如果看不到绿色框框，没有URL。那是因为你的仓库名称与用户名不一致，不过不用担心，也是有办法的，看下面的第二张图片。</p><p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/14.png"><br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/15.png"></p><p>3，点开网站看一下</p><p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/16.png"></p><p>完成！</p><p>其实细心的同学会发现，其实我们的网站地址和我们写的仓库名称是一样的，是滴！而且非常有个性的是我们的名字还出现在网站地址中。</p><p>笔者的Github仓库&amp;&amp;网址：Git仓库地址 <a href="http://zhihu1.github.io/">http://zhihu1.github.io/</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;操作步骤上手简单，即使非IT人员也很容易实现。&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;局限：只能是静态网站的个人网站&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;面向读者：所有人包括非IT人员&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://seshenjiage.eu.org/2023/05/21/hello-world/"/>
+    <id>http://seshenjiage.eu.org/2023/05/21/hello-world/</id>
+    <published>2023-05-21T11:07:34.831Z</published>
+    <updated>2023-05-21T11:07:34.831Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

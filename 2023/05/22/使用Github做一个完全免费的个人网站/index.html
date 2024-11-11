@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"seshenjiage.eu.org","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="操作步骤上手简单，即使非IT人员也很容易实现。 12局限：只能是静态网站的个人网站面向读者：所有人包括非IT人员">
+<meta property="og:type" content="article">
+<meta property="og:title" content="📡使用Github做一个完全免费的个人网站">
+<meta property="og:url" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/index.html">
+<meta property="og:site_name" content="色神加戈のBLOG">
+<meta property="og:description" content="操作步骤上手简单，即使非IT人员也很容易实现。 12局限：只能是静态网站的个人网站面向读者：所有人包括非IT人员">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/1.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/2.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/3.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/4.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/5.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/6.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/7.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/8.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/9.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/10.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/11.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/12.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/13.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/14.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/15.png">
+<meta property="og:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/16.png">
+<meta property="article:published_time" content="2023-05-22T04:55:15.735Z">
+<meta property="article:modified_time" content="2023-05-22T05:21:20.294Z">
+<meta property="article:author" content="江珂">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/1.png">
+
+<link rel="canonical" href="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>📡使用Github做一个完全免费的个人网站 | 色神加戈のBLOG</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="色神加戈のBLOG" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">色神加戈のBLOG</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-resources">
+
+    <a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a>
+
+  </li>
+        <li class="menu-item menu-item-导航">
+
+    <a href="/navigate/" rel="section"><i class="fas fa-location-arrow fa-fw"></i>导航</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="江珂">
+      <meta itemprop="description" content="永远相信美好的事情即将发生">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="色神加戈のBLOG">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          📡使用Github做一个完全免费的个人网站
+        </h1>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-05-22 12:55:15 / 修改时间：13:21:20" itemprop="dateCreated datePublished" datetime="2023-05-22T12:55:15+08:00">2023-05-22</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>操作步骤上手简单，即使非IT人员也很容易实现。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">局限：只能是静态网站的个人网站</span><br><span class="line">面向读者：所有人包括非IT人员</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<p>首先如果你无法理解“静态网站”的话，那么相信我，静态网站就可以满足你大部分个人网站的需求。其次这篇文章更多的是面向非IT人员，因为我写这篇文章的原因是我的一个同学的故事：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">我同学小A是律师，他想把自己处理过的一些案件记录在自己的个人博客中，他已经注册了公众号。但是他始</span><br><span class="line">终觉得有个网站或者个人博客会显得专业一些，而且还可以展示自己的个人履历，把这个网站链接放在公众号</span><br><span class="line">里面会显得跟专业一些。“好吧，我明白了~”</span><br></pre></td></tr></table></figure>
+<p>而且学会自己搭建一个静态网站是一个很酷的事情，你可以做一些很漂亮的宣传页，或者表达自我主张的个人博客，或者在我以前的文章里面给别人做一个网页版生日祝福or纪念日等等。</p>
+<p>所以开始吧~</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>首先我们要用到的工具是著名的开源社区Github，我们做的静态网站最终要托管在上面，这个功能叫做“Github Pages”，是一项免费的静态文件部署服务。</p>
+<p>虽然Github是国外的网站，但是在国内可以访问并且速度还不错！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">有人担心，如果以后Github被墙了怎么办？</span><br><span class="line">放心，即使被墙了，你学会如下的操作依然可以在类似的国内平台，例如码云等</span><br></pre></td></tr></table></figure>
+<h2 id="1-申请Github账号"><a href="#1-申请Github账号" class="headerlink" title="1.申请Github账号"></a>1.申请Github账号</h2><p>（如果有账号请直接登录然后跳转到教程下一步）</p>
+<p>访问Github，点击SIGN UP按钮。（Sign in是登录的意思，应该都很好理解）还有Github是全英文的，没有中文的哦亲，但这不影响我们使用的。</p>
+<p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/1.png"></p>
+<p>注册很简单，只需要用户名，密码，邮箱即可，不需要手机号。（对了，用户名用一个酷一点或者有意义一点的，因为它会出现在你的网址中）</p>
+<p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/2.png"></p>
+<p>接着，Github会问你是否需要付费使用。这里选择不用，因为Github提供的免费服务已经能满足大部分人包括开发者的需要了。付费服务主要是面向团队以及企业。</p>
+<p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/3.png"></p>
+<p>后面还会有一些步骤，大概意思就是问你想用Github做什么，你对Git的熟练程度，（感觉像是moba游戏新手调研都会这么做）因为Github网站迭代的原因可能会稍有不同。比如笔者这里试的时候是这样子的。</p>
+<p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/4.png"><br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/5.png"><br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/6.png"></p>
+<p>然后Github会给你注册的邮箱发送一个确认链接，请点击链接确认，不激活的话是无法正常使用Github的服务的。这个是Github的反爬虫系统。（题外话：Github的反爬虫系统很强很强！）</p>
+<p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/7.png"></p>
+<h2 id="2-创建一个仓库"><a href="#2-创建一个仓库" class="headerlink" title="2.创建一个仓库"></a>2.创建一个仓库</h2><p>接下来我们要创建一个仓库，仓库就是保存代码的地方，也就是保存网站的地方。这里我们做一个最简单的网站：个人简历。</p>
+<p>1，首先点击“Your repositories”，查看个人全部仓库，第一次肯定是空空如也啊。<br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/8.png"><br>2，接着我们新建一个仓库<br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/9.png"><br>3，这一步很重要，仓库的名字不可以随便写，必须是 &lt;我的名字&gt;.github.io</p>
+<p>比如我注册的名字是 zhihu1，所以这里我创建的仓库的名字必须是 ： <a target="_blank" rel="noopener" href="http://zhihu1.github.io/">http://zhihu1.github.io</a><br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/10.png"><br>4，接着下一步页面会比较复杂，你会看到一大堆看不懂的东西，其实那些事git操作提示。如果你熟练git的话就知道了。不过我们不管这些，我们只需要创建一个新的文件就行啦！<br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/11.png"><br>5，新文件的名字不可以乱写哦，必须是 index.html，这里大家都一样都写这个。（题外话：静态http文件托管服务的默认访问文件就是index.html）<br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/12.png"><br>可以参考笔者的内容如下，改成你自己的介绍哦~</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Hello 大家好&lt;/p&gt;</span><br><span class="line">&lt;p&gt;我是霸都丶傲天，这是我的个人网站。 &lt;/p&gt;</span><br><span class="line">&lt;p&gt;很高兴你来到这里, 你可以在以下的网站找到我&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;ul&gt;</span><br><span class="line">  &lt;li&gt; &lt;a href=&quot;https://www.zhihu.com/people/AJLoveChina&quot;&gt;知乎&lt;/a&gt; &lt;/li&gt;</span><br><span class="line">  &lt;li&gt; &lt;a href=&quot;http://hejie.nigeerhuo.com&quot;&gt;我的博客(已经不更细了,现在在知乎写文章)&lt;/a&gt; &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="3-查看网站的网址"><a href="#3-查看网站的网址" class="headerlink" title="3.查看网站的网址"></a>3.查看网站的网址</h2><p>到这里，我们一个最简单的个人网站的代码就完成了。接下来最重要的一步，我们需要知道网站的链接啊，只有这样，别人才能访问我们的网站呀。</p>
+<p>1，点击settings</p>
+<p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/13.png"></p>
+<p>2，然后往下翻找到 Github Pages， 看到绿色提示，后面的链接就是你的网站地址了，打开看看吧~</p>
+<p>Tip：这里如果看不到绿色框框，没有URL。那是因为你的仓库名称与用户名不一致，不过不用担心，也是有办法的，看下面的第二张图片。</p>
+<p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/14.png"><br><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/15.png"></p>
+<p>3，点开网站看一下</p>
+<p><img src="/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/16.png"></p>
+<p>完成！</p>
+<p>其实细心的同学会发现，其实我们的网站地址和我们写的仓库名称是一样的，是滴！而且非常有个性的是我们的名字还出现在网站地址中。</p>
+<p>笔者的Github仓库&amp;&amp;网址：Git仓库地址 <a target="_blank" rel="noopener" href="http://zhihu1.github.io/">http://zhihu1.github.io/</a></p>
+
+    </div>
+
+    
+    
+    
+
+    
+     <div>
+      <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+     </div>
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>江珂
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://seshenjiage.eu.org/2023/05/22/%E4%BD%BF%E7%94%A8Github%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" title="📡使用Github做一个完全免费的个人网站">http://seshenjiage.eu.org/2023/05/22/使用Github做一个完全免费的个人网站/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/05/21/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/05/23/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="next" title="从零开始搭建个人博客">
+      从零开始搭建个人博客 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E7%94%B3%E8%AF%B7Github%E8%B4%A6%E5%8F%B7"><span class="nav-number">2.</span> <span class="nav-text">1.申请Github账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93"><span class="nav-number">3.</span> <span class="nav-text">2.创建一个仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%9F%A5%E7%9C%8B%E7%BD%91%E7%AB%99%E7%9A%84%E7%BD%91%E5%9D%80"><span class="nav-number">4.</span> <span class="nav-text">3.查看网站的网址</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">江珂</p>
+  <div class="site-description" itemprop="description">永远相信美好的事情即将发生</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ace22958" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ace22958" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:seshenjiage@88.com" title="E-Mail → mailto:seshenjiage@88.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2023-05 – 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">江珂</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">总访客数<span id="busuanzi_value_site_uv"></span>人</span>
+    <span class="post-meta-divider">|</span>
+<!-- 不蒜子计数初始值纠正 -->
+<script>
+$(document).ready(function() {
+
+    var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+    var countOffset = 20000;  // 初始化首次数据
+
+    function fixCount() {            
+       if (document.getElementById("busuanzi_container_site_pv").style.display != "none")
+        {
+            $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + countOffset); 
+            clearInterval(int);
+        }                  
+        if ($("#busuanzi_container_site_pv").css("display") != "none")
+        {
+            $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + countOffset); // 加上初始数据 
+            clearInterval(int); // 停止检测
+        }  
+    }
+       	
+});
+</script> 
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共2.3k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
