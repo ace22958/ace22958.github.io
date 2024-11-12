@@ -4,7 +4,70 @@
   <url>
     <loc>http://seshenjiage.eu.org/navigate/index.html</loc>
     
-    <lastmod>2024-11-11</lastmod>
+    <lastmod>2024-11-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://seshenjiage.eu.org/2024/11/12/%E7%AC%AC%E5%85%AB%E6%AD%A5-%E4%BC%98%E5%8C%96%E4%B8%BB%E9%A2%98/</loc>
+    
+    <lastmod>2024-11-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://seshenjiage.eu.org/2024/11/12/%E7%AC%AC%E4%B8%83%E6%AD%A5-%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</loc>
+    
+    <lastmod>2024-11-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://seshenjiage.eu.org/2024/11/12/%E7%AC%AC%E5%85%AD%E6%AD%A5-%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D/</loc>
+    
+    <lastmod>2024-11-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://seshenjiage.eu.org/2024/11/12/%E7%AC%AC%E4%BA%94%E6%AD%A5-%E5%AE%89%E8%A3%85node-js%E5%92%8CHexo/</loc>
+    
+    <lastmod>2024-11-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://seshenjiage.eu.org/2024/11/12/%E7%AC%AC%E5%9B%9B%E6%AD%A5-%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D/</loc>
+    
+    <lastmod>2024-11-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://seshenjiage.eu.org/2024/11/12/%E7%AC%AC%E4%B8%89%E6%AD%A5-%E7%BB%91%E5%AE%9AGitHub%E5%B9%B6%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6/</loc>
+    
+    <lastmod>2024-11-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://seshenjiage.eu.org/2024/11/12/%E7%AC%AC%E4%BA%8C%E6%AD%A5-Git2-25-0%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4/</loc>
+    
+    <lastmod>2024-11-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,7 +148,7 @@
 
   <url>
     <loc>http://seshenjiage.eu.org/</loc>
-    <lastmod>2024-11-11</lastmod>
+    <lastmod>2024-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
